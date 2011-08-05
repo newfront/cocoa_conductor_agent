@@ -105,7 +105,7 @@
 		<string>IDEWindowToolbarIsVisible</string>
 		<string>IDEWorkspaceWindowControllerUniqueIdentifier</string>
 		<string>IDEActiveWorkspaceTabController</string>
-		<string>{{42, 80}, {1370, 1085}}</string>
+		<string>{{162, 72}, {1370, 1085}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1009,7 +1009,7 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>334195752.08293802</real>
+		<real>334196951.28082299</real>
 		<string>{661, 1283}</string>
 		<false/>
 		<string>{1343, 0}</string>
@@ -3180,7 +3180,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>334195752.08050901</real>
+		<real>334196951.276694</real>
 		<string>{661, 1283}</string>
 		<string>{1343, 0}</string>
 		<dict>
@@ -4050,12 +4050,7 @@
 				<integer>56</integer>
 			</dict>
 			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>2</integer>
-				</dict>
-			</array>
+			<array/>
 		</dict>
 		<dict>
 			<key>$class</key>
