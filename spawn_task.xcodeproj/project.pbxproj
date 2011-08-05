@@ -14,6 +14,8 @@
 		9C13314513E08A3000BFB678 /* spawn_taskAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13314413E08A3000BFB678 /* spawn_taskAppDelegate.m */; };
 		9C13314813E08A3000BFB678 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C13314613E08A3000BFB678 /* MainMenu.xib */; };
 		9C13330413E71EF200BFB678 /* ThreadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13330313E71EF200BFB678 /* ThreadController.m */; };
+		9C13349813EB874A00BFB678 /* SipParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13349713EB874A00BFB678 /* SipParser.m */; };
+		9C13349A13EB875000BFB678 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13349913EB874F00BFB678 /* RegexKitLite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		9C13314713E08A3000BFB678 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9C13330213E71EF200BFB678 /* ThreadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadController.h; sourceTree = "<group>"; };
 		9C13330313E71EF200BFB678 /* ThreadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadController.m; sourceTree = "<group>"; };
+		9C13349513EB874500BFB678 /* SipParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SipParser.h; sourceTree = "<group>"; };
+		9C13349713EB874A00BFB678 /* SipParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SipParser.m; sourceTree = "<group>"; };
+		9C13349913EB874F00BFB678 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		9C13349B13EB875600BFB678 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				9C13314313E08A3000BFB678 /* spawn_taskAppDelegate.h */,
+				9C13349B13EB875600BFB678 /* RegexKitLite.h */,
+				9C13349913EB874F00BFB678 /* RegexKitLite.m */,
+				9C13349713EB874A00BFB678 /* SipParser.m */,
+				9C13349513EB874500BFB678 /* SipParser.h */,
 				9C13314413E08A3000BFB678 /* spawn_taskAppDelegate.m */,
 				9C13314613E08A3000BFB678 /* MainMenu.xib */,
 				9C13313813E08A3000BFB678 /* Supporting Files */,
@@ -173,6 +183,8 @@
 				9C13313F13E08A3000BFB678 /* main.m in Sources */,
 				9C13314513E08A3000BFB678 /* spawn_taskAppDelegate.m in Sources */,
 				9C13330413E71EF200BFB678 /* ThreadController.m in Sources */,
+				9C13349813EB874A00BFB678 /* SipParser.m in Sources */,
+				9C13349A13EB875000BFB678 /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +232,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-licucore";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -234,6 +247,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "-licucore";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -287,6 +301,7 @@
 				9C13314D13E08A3000BFB678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
