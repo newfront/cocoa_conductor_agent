@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C13313213E08A3000BFB678 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C13313113E08A3000BFB678 /* Cocoa.framework */; };
+		9C13313C13E08A3000BFB678 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C13313A13E08A3000BFB678 /* InfoPlist.strings */; };
+		9C13313F13E08A3000BFB678 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13313E13E08A3000BFB678 /* main.m */; };
+		9C13314213E08A3000BFB678 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9C13314013E08A3000BFB678 /* Credits.rtf */; };
+		9C13314513E08A3000BFB678 /* spawn_taskAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13314413E08A3000BFB678 /* spawn_taskAppDelegate.m */; };
+		9C13314813E08A3000BFB678 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C13314613E08A3000BFB678 /* MainMenu.xib */; };
+		9C13330413E71EF200BFB678 /* ThreadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13330313E71EF200BFB678 /* ThreadController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C13312D13E08A3000BFB678 /* spawn_task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spawn_task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C13313113E08A3000BFB678 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9C13313413E08A3000BFB678 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9C13313513E08A3000BFB678 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9C13313613E08A3000BFB678 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C13313913E08A3000BFB678 /* spawn_task-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spawn_task-Info.plist"; sourceTree = "<group>"; };
+		9C13313B13E08A3000BFB678 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C13313D13E08A3000BFB678 /* spawn_task-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spawn_task-Prefix.pch"; sourceTree = "<group>"; };
+		9C13313E13E08A3000BFB678 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C13314113E08A3000BFB678 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9C13314313E08A3000BFB678 /* spawn_taskAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spawn_taskAppDelegate.h; sourceTree = "<group>"; };
+		9C13314413E08A3000BFB678 /* spawn_taskAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spawn_taskAppDelegate.m; sourceTree = "<group>"; };
+		9C13314713E08A3000BFB678 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9C13330213E71EF200BFB678 /* ThreadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadController.h; sourceTree = "<group>"; };
+		9C13330313E71EF200BFB678 /* ThreadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C13312A13E08A3000BFB678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C13313213E08A3000BFB678 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C13312213E08A3000BFB678 = {
+			isa = PBXGroup;
+			children = (
+				9C13313713E08A3000BFB678 /* spawn_task */,
+				9C13313013E08A3000BFB678 /* Frameworks */,
+				9C13312E13E08A3000BFB678 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C13312E13E08A3000BFB678 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C13312D13E08A3000BFB678 /* spawn_task.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C13313013E08A3000BFB678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C13313113E08A3000BFB678 /* Cocoa.framework */,
+				9C13313313E08A3000BFB678 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C13313313E08A3000BFB678 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C13313413E08A3000BFB678 /* AppKit.framework */,
+				9C13313513E08A3000BFB678 /* CoreData.framework */,
+				9C13313613E08A3000BFB678 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9C13313713E08A3000BFB678 /* spawn_task */ = {
+			isa = PBXGroup;
+			children = (
+				9C13314313E08A3000BFB678 /* spawn_taskAppDelegate.h */,
+				9C13314413E08A3000BFB678 /* spawn_taskAppDelegate.m */,
+				9C13314613E08A3000BFB678 /* MainMenu.xib */,
+				9C13313813E08A3000BFB678 /* Supporting Files */,
+				9C13330213E71EF200BFB678 /* ThreadController.h */,
+				9C13330313E71EF200BFB678 /* ThreadController.m */,
+			);
+			path = spawn_task;
+			sourceTree = "<group>";
+		};
+		9C13313813E08A3000BFB678 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C13313913E08A3000BFB678 /* spawn_task-Info.plist */,
+				9C13313A13E08A3000BFB678 /* InfoPlist.strings */,
+				9C13313D13E08A3000BFB678 /* spawn_task-Prefix.pch */,
+				9C13313E13E08A3000BFB678 /* main.m */,
+				9C13314013E08A3000BFB678 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C13312C13E08A3000BFB678 /* spawn_task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C13314B13E08A3000BFB678 /* Build configuration list for PBXNativeTarget "spawn_task" */;
+			buildPhases = (
+				9C13312913E08A3000BFB678 /* Sources */,
+				9C13312A13E08A3000BFB678 /* Frameworks */,
+				9C13312B13E08A3000BFB678 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = spawn_task;
+			productName = spawn_task;
+			productReference = 9C13312D13E08A3000BFB678 /* spawn_task.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C13312413E08A3000BFB678 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Convo Communications";
+			};
+			buildConfigurationList = 9C13312713E08A3000BFB678 /* Build configuration list for PBXProject "spawn_task" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9C13312213E08A3000BFB678;
+			productRefGroup = 9C13312E13E08A3000BFB678 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C13312C13E08A3000BFB678 /* spawn_task */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C13312B13E08A3000BFB678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C13313C13E08A3000BFB678 /* InfoPlist.strings in Resources */,
+				9C13314213E08A3000BFB678 /* Credits.rtf in Resources */,
+				9C13314813E08A3000BFB678 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C13312913E08A3000BFB678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C13313F13E08A3000BFB678 /* main.m in Sources */,
+				9C13314513E08A3000BFB678 /* spawn_taskAppDelegate.m in Sources */,
+				9C13330413E71EF200BFB678 /* ThreadController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C13313A13E08A3000BFB678 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C13313B13E08A3000BFB678 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9C13314013E08A3000BFB678 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C13314113E08A3000BFB678 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9C13314613E08A3000BFB678 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C13314713E08A3000BFB678 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C13314913E08A3000BFB678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9C13314A13E08A3000BFB678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9C13314C13E08A3000BFB678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spawn_task/spawn_task-Prefix.pch";
+				INFOPLIST_FILE = "spawn_task/spawn_task-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9C13314D13E08A3000BFB678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spawn_task/spawn_task-Prefix.pch";
+				INFOPLIST_FILE = "spawn_task/spawn_task-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C13312713E08A3000BFB678 /* Build configuration list for PBXProject "spawn_task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C13314913E08A3000BFB678 /* Debug */,
+				9C13314A13E08A3000BFB678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C13314B13E08A3000BFB678 /* Build configuration list for PBXNativeTarget "spawn_task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C13314C13E08A3000BFB678 /* Debug */,
+				9C13314D13E08A3000BFB678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C13312413E08A3000BFB678 /* Project object */;
+}

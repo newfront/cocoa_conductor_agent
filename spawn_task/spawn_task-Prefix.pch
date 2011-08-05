@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'spawn_task' target in the 'spawn_task' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
