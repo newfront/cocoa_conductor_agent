@@ -162,14 +162,14 @@
 
 -(void) processData:(NSData *) data
 {
-    NSLog(@"\n\n\n\ncalled processData\n\n\n\n\n");
-    NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    //NSLog(@"\n\n\n\ncalled processData\n\n\n\n\n");
     
     //NSString *other = [[NSString stringWithUTF8String:[data bytes]] autorelease];
     
     // if data packet is larger than 200 bytes
     if([data length] > IMPORTANT_PACKET_SIZE)
     {
+        NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         NSLog(@"data: %lu", [data length]);
         
         // clean up string
@@ -193,10 +193,9 @@
         [tmp parseSipMessage:dataString];
         [callingClass task_responded:dataString];
         [tmp release];
+        // clean up memory
+        [dataString release];
     }
-    
-    // clean up memory
-    [dataString release];
 }
 
 -(void) killTask

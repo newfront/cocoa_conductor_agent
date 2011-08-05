@@ -130,6 +130,10 @@
     NSArray *matches = [packet_header componentsMatchedByRegex:direction_regexp];
     for(NSString *match in matches)
     {
+        /*
+         Need to update method, direction is from (ip) -> to (ip)
+        */
+        
         //NSLog(@"%lu: %lu '%@'",(u_long)++line, (u_long)[match length], match);
         if([match isEqualToString:@"U"] == YES)
         {

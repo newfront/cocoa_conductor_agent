@@ -16,6 +16,7 @@
 		9C13330413E71EF200BFB678 /* ThreadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13330313E71EF200BFB678 /* ThreadController.m */; };
 		9C13349813EB874A00BFB678 /* SipParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13349713EB874A00BFB678 /* SipParser.m */; };
 		9C13349A13EB875000BFB678 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13349913EB874F00BFB678 /* RegexKitLite.m */; };
+		9C13349E13EC683F00BFB678 /* SipMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13349D13EC683F00BFB678 /* SipMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		9C13349713EB874A00BFB678 /* SipParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SipParser.m; sourceTree = "<group>"; };
 		9C13349913EB874F00BFB678 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		9C13349B13EB875600BFB678 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		9C13349C13EC683F00BFB678 /* SipMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SipMessage.h; sourceTree = "<group>"; };
+		9C13349D13EC683F00BFB678 /* SipMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SipMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				9C13313813E08A3000BFB678 /* Supporting Files */,
 				9C13330213E71EF200BFB678 /* ThreadController.h */,
 				9C13330313E71EF200BFB678 /* ThreadController.m */,
+				9C13349C13EC683F00BFB678 /* SipMessage.h */,
+				9C13349D13EC683F00BFB678 /* SipMessage.m */,
 			);
 			path = spawn_task;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				9C13330413E71EF200BFB678 /* ThreadController.m in Sources */,
 				9C13349813EB874A00BFB678 /* SipParser.m in Sources */,
 				9C13349A13EB875000BFB678 /* RegexKitLite.m in Sources */,
+				9C13349E13EC683F00BFB678 /* SipMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
