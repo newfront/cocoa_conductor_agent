@@ -66,11 +66,24 @@
 {
     NSString *leading_whitespace_regexp = @"^(\\s*)";
     NSString *leading_hash_regexp = @"^\\W";
+    
+    /*
+     Clean up stray Hashes and \n in packet
+    */
+    NSString *stray_hashes_newline_regexp = @"^(#*)\\n";
     //NSString *closing_hash_regexp = @"\\W$";
     //NSString *trailing_whitespace_regexp = @"\\s*$";
     
     NSUInteger line = 0UL;
     NSArray *matches;
+    
+    // kill opening hashes and newline
+    matches = [packet componentsMatchedByRegex:stray_hashes_newline_regexp];
+    for(NSString *match in matches)
+    {
+        NSLog(@"Search for Hashes followed by newline: %lu: %lu '%@'",(u_long)++line, (u_long)[match length], match);
+        packet = [packet substringFromIndex:[match length]];
+    }
     
     // kill opening hash symbol
     matches = [packet componentsMatchedByRegex:leading_hash_regexp];

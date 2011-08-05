@@ -8,6 +8,7 @@
 
 #import "ThreadController.h"
 #import "spawn_taskAppDelegate.h"
+#import "SipParser.h"
 
 #define NGREP_PATH @"/usr/local/bin/ngrep" 
 #define NGREP_FILTER @"SIP/2.0"
@@ -54,9 +55,11 @@
         
         
         /* set nGrep args */
+        // sudo chmod 775 /dev/bpf*
         
         [args addObject:@"-d"];
-        [args addObject:@"en0"];
+        //[args addObject:@"en0"];
+        [args addObject:@"en1"];
         [args addObject:@"-W"];
         [args addObject:@"single"];
         [args addObject:@"-pt"];
@@ -186,7 +189,10 @@
         // [self parse:dataString] return NSMutableDictionary
         // keys: direction (to,from), timestamp, local_ip_address, remote_ip_address, header, body, type
         
+        SipParser *tmp = [[SipParser alloc] init];
+        [tmp parseSipMessage:dataString];
         [callingClass task_responded:dataString];
+        [tmp release];
     }
     
     // clean up memory
